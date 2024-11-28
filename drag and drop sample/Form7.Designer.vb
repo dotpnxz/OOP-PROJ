@@ -28,7 +28,6 @@ Partial Class Form7
         Me.btnPreviousMonth = New System.Windows.Forms.Button()
         Me.btnSignOut = New System.Windows.Forms.Button()
         Me.lblMonth = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -45,7 +44,7 @@ Partial Class Form7
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(3, 76)
+        Me.Button2.Location = New System.Drawing.Point(3, 43)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(130, 42)
         Me.Button2.TabIndex = 11
@@ -89,16 +88,6 @@ Partial Class Form7
         Me.lblMonth.TabIndex = 19
         Me.lblMonth.Text = "Month"
         '
-        'Button3
-        '
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(3, 124)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(130, 41)
-        Me.Button3.TabIndex = 21
-        Me.Button3.Text = "Assign Counselor"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'Button4
         '
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -115,7 +104,6 @@ Partial Class Form7
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 363)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.lblMonth)
         Me.Controls.Add(Me.btnSignOut)
         Me.Controls.Add(Me.btnNextMonth)
@@ -137,6 +125,5 @@ Partial Class Form7
     Friend WithEvents btnPreviousMonth As Button
     Friend WithEvents btnSignOut As Button
     Friend WithEvents lblMonth As Label
-    Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
 End Class

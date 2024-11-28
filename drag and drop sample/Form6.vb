@@ -3,6 +3,9 @@
 Public Class Form6
     Private currentMonth As Integer = DateTime.Now.Month
     Private currentYear As Integer = DateTime.Now.Year
+    ' Inside Form6.vb
+    Public loggedInUserId As Integer
+
     Private Sub Form6_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SetupCalendar()
         LoadMonthCalendar(currentMonth, currentYear)
@@ -106,5 +109,13 @@ Public Class Form6
             DataGridView1(e.ColumnIndex, e.RowIndex).Selected = True
         End If
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim userId As Integer = Form1.LoggedInUserId ' Retrieve the ID stored in Form1
+        Dim form11 As New Form11(userId) ' Pass the user ID to Form8
+        form11.Show()
+        Me.Hide() ' Optionally hide Form4
+    End Sub
+
 
 End Class

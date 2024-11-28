@@ -23,9 +23,7 @@ Partial Class Form6
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.lblMonth = New System.Windows.Forms.Label()
         Me.btnSignOut = New System.Windows.Forms.Button()
         Me.btnNextMonth = New System.Windows.Forms.Button()
@@ -37,41 +35,21 @@ Partial Class Form6
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(163, 43)
+        Me.DataGridView1.Location = New System.Drawing.Point(148, 43)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 62
-        Me.DataGridView1.Size = New System.Drawing.Size(661, 308)
+        Me.DataGridView1.Size = New System.Drawing.Size(676, 308)
         Me.DataGridView1.TabIndex = 2
-        '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(12, 57)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(130, 49)
-        Me.Button1.TabIndex = 9
-        Me.Button1.Text = "Mark as Completed"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(12, 112)
+        Me.Button2.Location = New System.Drawing.Point(12, 43)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(130, 42)
         Me.Button2.TabIndex = 10
         Me.Button2.Text = "Assigned Appointment"
         Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(12, 160)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(130, 42)
-        Me.Button3.TabIndex = 12
-        Me.Button3.Text = "Reschedule Appointment"
-        Me.Button3.UseVisualStyleBackColor = True
         '
         'lblMonth
         '
@@ -130,9 +108,7 @@ Partial Class Form6
         Me.Controls.Add(Me.btnPreviousMonth)
         Me.Controls.Add(Me.btnSignOut)
         Me.Controls.Add(Me.lblMonth)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "Form6"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -144,9 +120,7 @@ Partial Class Form6
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
     Friend WithEvents lblMonth As Label
     Friend WithEvents btnSignOut As Button
     Friend WithEvents btnNextMonth As Button

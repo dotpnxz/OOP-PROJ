@@ -2,8 +2,11 @@
 
 Public Class Form8
     ' Assuming you have a global variable or method that holds the current logged-in user's user_id
-    Private loggedInUserId As Integer = 2 ' Replace with actual logic to get the logged-in user's user_id
-
+    Private loggedInUserId As Integer ' Replace with actual logic to get the logged-in user's user_id
+    Public Sub New(userId As Integer)
+        InitializeComponent()
+        loggedInUserId = userId
+    End Sub
     Private Sub Form8_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadAppointments()
     End Sub

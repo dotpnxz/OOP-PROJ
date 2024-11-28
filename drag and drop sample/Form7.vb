@@ -108,4 +108,9 @@ Public Class Form7
         LoadMonthCalendar(currentMonth, currentYear)
         lblMonth.Text = New DateTime(currentYear, currentMonth, 1).ToString("MMMM yyyy")
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Hide()
+        Form10.Show()
+    End Sub
 End Class

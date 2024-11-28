@@ -320,8 +320,10 @@ Public Class Form4
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Form8.Show()
-        Me.Hide()
+        Dim userId As Integer = Form1.LoggedInUserId ' Retrieve the ID stored in Form1
+        Dim form8 As New Form8(userId) ' Pass the user ID to Form8
+        form8.Show()
+        Me.Hide() ' Optionally hide Form4
     End Sub
 
     Private Sub btnPreviousMonth_Click(sender As Object, e As EventArgs) Handles btnPreviousMonth.Click
