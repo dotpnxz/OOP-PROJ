@@ -31,6 +31,7 @@ Partial Class Form5
         Me.btnNextMonth = New System.Windows.Forms.Button()
         Me.btnPreviousMonth = New System.Windows.Forms.Button()
         Me.btnSignOut = New System.Windows.Forms.Button()
+        Me.btnHistory = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -119,12 +120,23 @@ Partial Class Form5
         Me.btnSignOut.Text = "Sign Out"
         Me.btnSignOut.UseVisualStyleBackColor = True
         '
+        'btnHistory
+        '
+        Me.btnHistory.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHistory.Location = New System.Drawing.Point(12, 162)
+        Me.btnHistory.Name = "btnHistory"
+        Me.btnHistory.Size = New System.Drawing.Size(130, 42)
+        Me.btnHistory.TabIndex = 23
+        Me.btnHistory.Text = "History"
+        Me.btnHistory.UseVisualStyleBackColor = True
+        '
         'Form5
         '
         Me.AccessibleName = ""
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(926, 417)
+        Me.ClientSize = New System.Drawing.Size(912, 426)
+        Me.Controls.Add(Me.btnHistory)
         Me.Controls.Add(Me.btnSignOut)
         Me.Controls.Add(Me.btnNextMonth)
         Me.Controls.Add(Me.btnPreviousMonth)
@@ -152,4 +164,5 @@ Partial Class Form5
     Friend WithEvents btnNextMonth As Button
     Friend WithEvents btnPreviousMonth As Button
     Friend WithEvents btnSignOut As Button
+    Friend WithEvents btnHistory As Button
 End Class

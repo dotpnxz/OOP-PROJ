@@ -29,6 +29,7 @@ Partial Class Form6
         Me.btnNextMonth = New System.Windows.Forms.Button()
         Me.btnPreviousMonth = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnHistory = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -98,11 +99,22 @@ Partial Class Form6
         Me.Button4.Text = "Profile Info"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'btnHistory
+        '
+        Me.btnHistory.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHistory.Location = New System.Drawing.Point(12, 91)
+        Me.btnHistory.Name = "btnHistory"
+        Me.btnHistory.Size = New System.Drawing.Size(130, 42)
+        Me.btnHistory.TabIndex = 22
+        Me.btnHistory.Text = "History"
+        Me.btnHistory.UseVisualStyleBackColor = True
+        '
         'Form6
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(830, 361)
+        Me.Controls.Add(Me.btnHistory)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.btnNextMonth)
         Me.Controls.Add(Me.btnPreviousMonth)
@@ -126,4 +138,5 @@ Partial Class Form6
     Friend WithEvents btnNextMonth As Button
     Friend WithEvents btnPreviousMonth As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents btnHistory As Button
 End Class

@@ -27,6 +27,9 @@ Partial Class Form11
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.dgvUsers = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.ComboBoxStatus = New System.Windows.Forms.ComboBox()
+        Me.btnStatus = New System.Windows.Forms.Button()
         CType(Me.dgvUsers, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -43,7 +46,7 @@ Partial Class Form11
         'btnRefresh
         '
         Me.btnRefresh.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRefresh.Location = New System.Drawing.Point(631, 100)
+        Me.btnRefresh.Location = New System.Drawing.Point(631, 150)
         Me.btnRefresh.Margin = New System.Windows.Forms.Padding(2)
         Me.btnRefresh.Name = "btnRefresh"
         Me.btnRefresh.Size = New System.Drawing.Size(64, 24)
@@ -54,7 +57,7 @@ Partial Class Form11
         'btnDelete
         '
         Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDelete.Location = New System.Drawing.Point(631, 128)
+        Me.btnDelete.Location = New System.Drawing.Point(631, 178)
         Me.btnDelete.Margin = New System.Windows.Forms.Padding(2)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(64, 24)
@@ -83,18 +86,49 @@ Partial Class Form11
         Me.Label1.TabIndex = 23
         Me.Label1.Text = "Appointment List"
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(631, 82)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(40, 13)
+        Me.Label2.TabIndex = 28
+        Me.Label2.Text = "Status "
+        '
+        'ComboBoxStatus
+        '
+        Me.ComboBoxStatus.FormattingEnabled = True
+        Me.ComboBoxStatus.Location = New System.Drawing.Point(631, 98)
+        Me.ComboBoxStatus.Name = "ComboBoxStatus"
+        Me.ComboBoxStatus.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBoxStatus.TabIndex = 29
+        '
+        'btnStatus
+        '
+        Me.btnStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStatus.Location = New System.Drawing.Point(631, 124)
+        Me.btnStatus.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnStatus.Name = "btnStatus"
+        Me.btnStatus.Size = New System.Drawing.Size(121, 22)
+        Me.btnStatus.TabIndex = 31
+        Me.btnStatus.Text = "Change Status"
+        Me.btnStatus.UseVisualStyleBackColor = True
+        '
         'Form11
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(706, 450)
+        Me.ClientSize = New System.Drawing.Size(758, 448)
+        Me.Controls.Add(Me.btnStatus)
+        Me.Controls.Add(Me.ComboBoxStatus)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnRefresh)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.dgvUsers)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form11"
-        Me.Text = "Form11"
+        Me.Text = "Counselor's Appointment List"
         CType(Me.dgvUsers, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -105,4 +139,7 @@ Partial Class Form11
     Friend WithEvents btnDelete As Button
     Friend WithEvents dgvUsers As DataGridView
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents ComboBoxStatus As ComboBox
+    Friend WithEvents btnStatus As Button
 End Class

@@ -42,7 +42,7 @@ Partial Class Form1
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button1.Location = New System.Drawing.Point(23, 185)
+        Me.Button1.Location = New System.Drawing.Point(146, 215)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(180, 23)
         Me.Button1.TabIndex = 0
@@ -53,7 +53,7 @@ Partial Class Form1
         '
         Me.txtUsername.BackColor = System.Drawing.Color.WhiteSmoke
         Me.txtUsername.ForeColor = System.Drawing.Color.DimGray
-        Me.txtUsername.Location = New System.Drawing.Point(56, 100)
+        Me.txtUsername.Location = New System.Drawing.Point(179, 130)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(129, 20)
         Me.txtUsername.TabIndex = 3
@@ -63,7 +63,7 @@ Partial Class Form1
         '
         Me.txtPassword.BackColor = System.Drawing.Color.WhiteSmoke
         Me.txtPassword.ForeColor = System.Drawing.Color.DimGray
-        Me.txtPassword.Location = New System.Drawing.Point(56, 144)
+        Me.txtPassword.Location = New System.Drawing.Point(179, 174)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(129, 20)
         Me.txtPassword.TabIndex = 5
@@ -86,7 +86,7 @@ Partial Class Form1
         Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label4.Location = New System.Drawing.Point(20, 136)
+        Me.Label4.Location = New System.Drawing.Point(143, 166)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(0, 15)
         Me.Label4.TabIndex = 7
@@ -95,7 +95,7 @@ Partial Class Form1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(15, 95)
+        Me.PictureBox1.Location = New System.Drawing.Point(138, 125)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(38, 35)
         Me.PictureBox1.TabIndex = 8
@@ -105,7 +105,7 @@ Partial Class Form1
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(15, 136)
+        Me.PictureBox2.Location = New System.Drawing.Point(138, 166)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(38, 43)
         Me.PictureBox2.TabIndex = 9
@@ -115,7 +115,7 @@ Partial Class Form1
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(86, 25)
+        Me.PictureBox3.Location = New System.Drawing.Point(209, 55)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(56, 54)
         Me.PictureBox3.TabIndex = 10
@@ -127,7 +127,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(228, 227)
+        Me.ClientSize = New System.Drawing.Size(470, 306)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)

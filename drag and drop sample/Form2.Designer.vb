@@ -42,7 +42,7 @@ Partial Class form2
         Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label2.Location = New System.Drawing.Point(87, 31)
+        Me.Label2.Location = New System.Drawing.Point(191, 76)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(79, 26)
         Me.Label2.TabIndex = 5
@@ -51,7 +51,7 @@ Partial Class form2
         'txtUsername
         '
         Me.txtUsername.ForeColor = System.Drawing.Color.DimGray
-        Me.txtUsername.Location = New System.Drawing.Point(133, 85)
+        Me.txtUsername.Location = New System.Drawing.Point(237, 130)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(121, 20)
         Me.txtUsername.TabIndex = 6
@@ -62,7 +62,7 @@ Partial Class form2
         Me.btnCreateUser.BackColor = System.Drawing.Color.SteelBlue
         Me.btnCreateUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCreateUser.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.btnCreateUser.Location = New System.Drawing.Point(46, 176)
+        Me.btnCreateUser.Location = New System.Drawing.Point(150, 221)
         Me.btnCreateUser.Name = "btnCreateUser"
         Me.btnCreateUser.Size = New System.Drawing.Size(168, 24)
         Me.btnCreateUser.TabIndex = 10
@@ -72,7 +72,7 @@ Partial Class form2
         'txtPassword
         '
         Me.txtPassword.ForeColor = System.Drawing.Color.DimGray
-        Me.txtPassword.Location = New System.Drawing.Point(6, 111)
+        Me.txtPassword.Location = New System.Drawing.Point(110, 156)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(121, 20)
         Me.txtPassword.TabIndex = 11
@@ -81,7 +81,7 @@ Partial Class form2
         'txtConfirmPassword
         '
         Me.txtConfirmPassword.ForeColor = System.Drawing.Color.DimGray
-        Me.txtConfirmPassword.Location = New System.Drawing.Point(133, 111)
+        Me.txtConfirmPassword.Location = New System.Drawing.Point(237, 156)
         Me.txtConfirmPassword.Name = "txtConfirmPassword"
         Me.txtConfirmPassword.Size = New System.Drawing.Size(123, 20)
         Me.txtConfirmPassword.TabIndex = 12
@@ -90,7 +90,7 @@ Partial Class form2
         'txtFullname
         '
         Me.txtFullname.ForeColor = System.Drawing.Color.DimGray
-        Me.txtFullname.Location = New System.Drawing.Point(6, 85)
+        Me.txtFullname.Location = New System.Drawing.Point(110, 130)
         Me.txtFullname.Name = "txtFullname"
         Me.txtFullname.Size = New System.Drawing.Size(121, 20)
         Me.txtFullname.TabIndex = 15
@@ -100,7 +100,7 @@ Partial Class form2
         '
         Me.rbtnStudent.AutoSize = True
         Me.rbtnStudent.BackColor = System.Drawing.Color.Transparent
-        Me.rbtnStudent.Location = New System.Drawing.Point(6, 142)
+        Me.rbtnStudent.Location = New System.Drawing.Point(110, 187)
         Me.rbtnStudent.Name = "rbtnStudent"
         Me.rbtnStudent.Size = New System.Drawing.Size(62, 17)
         Me.rbtnStudent.TabIndex = 16
@@ -112,7 +112,7 @@ Partial Class form2
         '
         Me.rbtnCounselor.AutoSize = True
         Me.rbtnCounselor.BackColor = System.Drawing.Color.Transparent
-        Me.rbtnCounselor.Location = New System.Drawing.Point(74, 142)
+        Me.rbtnCounselor.Location = New System.Drawing.Point(178, 187)
         Me.rbtnCounselor.Name = "rbtnCounselor"
         Me.rbtnCounselor.Size = New System.Drawing.Size(72, 17)
         Me.rbtnCounselor.TabIndex = 17
@@ -124,7 +124,7 @@ Partial Class form2
         '
         Me.rbtnDirector.AutoSize = True
         Me.rbtnDirector.BackColor = System.Drawing.Color.Transparent
-        Me.rbtnDirector.Location = New System.Drawing.Point(152, 142)
+        Me.rbtnDirector.Location = New System.Drawing.Point(256, 187)
         Me.rbtnDirector.Name = "rbtnDirector"
         Me.rbtnDirector.Size = New System.Drawing.Size(62, 17)
         Me.rbtnDirector.TabIndex = 18
@@ -151,7 +151,7 @@ Partial Class form2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(257, 231)
+        Me.ClientSize = New System.Drawing.Size(478, 340)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.rbtnDirector)
         Me.Controls.Add(Me.rbtnCounselor)

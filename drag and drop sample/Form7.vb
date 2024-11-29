@@ -113,4 +113,9 @@ Public Class Form7
         Me.Hide()
         Form10.Show()
     End Sub
+
+    Private Sub btnHistory_Click(sender As Object, e As EventArgs) Handles btnHistory.Click
+        Me.Hide()
+        Form14.show()
+    End Sub
 End Class

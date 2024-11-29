@@ -130,4 +130,9 @@ Public Class Form5
         LoadMonthCalendar(currentMonth, currentYear)
         lblMonth.Text = New DateTime(currentYear, currentMonth, 1).ToString("MMMM yyyy")
     End Sub
+
+    Private Sub btnHistory_Click(sender As Object, e As EventArgs) Handles btnHistory.Click
+        Me.Hide()
+        Form13.Show()
+    End Sub
 End Class

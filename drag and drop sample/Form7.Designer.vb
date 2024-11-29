@@ -28,7 +28,7 @@ Partial Class Form7
         Me.btnPreviousMonth = New System.Windows.Forms.Button()
         Me.btnSignOut = New System.Windows.Forms.Button()
         Me.lblMonth = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnHistory = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -88,22 +88,22 @@ Partial Class Form7
         Me.lblMonth.TabIndex = 19
         Me.lblMonth.Text = "Month"
         '
-        'Button4
+        'btnHistory
         '
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(3, 14)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(78, 23)
-        Me.Button4.TabIndex = 22
-        Me.Button4.Text = "Profile Info"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnHistory.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHistory.Location = New System.Drawing.Point(3, 91)
+        Me.btnHistory.Name = "btnHistory"
+        Me.btnHistory.Size = New System.Drawing.Size(130, 42)
+        Me.btnHistory.TabIndex = 23
+        Me.btnHistory.Text = "History"
+        Me.btnHistory.UseVisualStyleBackColor = True
         '
         'Form7
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 363)
-        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.btnHistory)
         Me.Controls.Add(Me.lblMonth)
         Me.Controls.Add(Me.btnSignOut)
         Me.Controls.Add(Me.btnNextMonth)
@@ -125,5 +125,5 @@ Partial Class Form7
     Friend WithEvents btnPreviousMonth As Button
     Friend WithEvents btnSignOut As Button
     Friend WithEvents lblMonth As Label
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btnHistory As Button
 End Class

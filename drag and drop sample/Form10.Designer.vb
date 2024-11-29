@@ -126,7 +126,7 @@ Partial Class Form10
         Me.Controls.Add(Me.dgvUsers)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form10"
-        Me.Text = "Form10"
+        Me.Text = "Director's Appointment List"
         CType(Me.dgvUsers, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

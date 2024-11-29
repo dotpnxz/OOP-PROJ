@@ -27,6 +27,7 @@ Partial Class Form3
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.btnRefresh = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.dgvUsers, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -34,7 +35,7 @@ Partial Class Form3
         '
         Me.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvUsers.Location = New System.Drawing.Point(-10, 47)
-        Me.dgvUsers.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dgvUsers.Margin = New System.Windows.Forms.Padding(2)
         Me.dgvUsers.Name = "dgvUsers"
         Me.dgvUsers.RowHeadersWidth = 62
         Me.dgvUsers.RowTemplate.Height = 28
@@ -45,7 +46,7 @@ Partial Class Form3
         '
         Me.btnEdit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEdit.Location = New System.Drawing.Point(467, 47)
-        Me.btnEdit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnEdit.Margin = New System.Windows.Forms.Padding(2)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.Size = New System.Drawing.Size(64, 32)
         Me.btnEdit.TabIndex = 2
@@ -56,7 +57,7 @@ Partial Class Form3
         '
         Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDelete.Location = New System.Drawing.Point(467, 83)
-        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(64, 24)
         Me.btnDelete.TabIndex = 3
@@ -67,7 +68,7 @@ Partial Class Form3
         '
         Me.btnRefresh.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRefresh.Location = New System.Drawing.Point(467, 111)
-        Me.btnRefresh.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnRefresh.Margin = New System.Windows.Forms.Padding(2)
         Me.btnRefresh.Name = "btnRefresh"
         Me.btnRefresh.Size = New System.Drawing.Size(64, 24)
         Me.btnRefresh.TabIndex = 8
@@ -86,6 +87,15 @@ Partial Class Form3
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Account List"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(12, 12)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 10
+        Me.Button1.Text = "Back"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Form3
         '
         Me.AccessibleDescription = ""
@@ -93,12 +103,13 @@ Partial Class Form3
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(548, 395)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnRefresh)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnEdit)
         Me.Controls.Add(Me.dgvUsers)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form3"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ManageUsersForm"
@@ -113,4 +124,5 @@ Partial Class Form3
     Friend WithEvents btnDelete As Button
     Friend WithEvents btnRefresh As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents Button1 As Button
 End Class

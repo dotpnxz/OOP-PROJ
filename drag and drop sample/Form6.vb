@@ -117,5 +117,10 @@ Public Class Form6
         Me.Hide() ' Optionally hide Form4
     End Sub
 
-
+    Private Sub btnHistory_Click(sender As Object, e As EventArgs) Handles btnHistory.Click
+        Dim userId As Integer = Form1.LoggedInUserId ' Retrieve the ID stored in Form1
+        Dim form12 As New Form12(userId) ' Pass the user ID to Form12
+        form12.Show()
+        Me.Hide() ' Optionally hide Form4
+    End Sub
 End Class
