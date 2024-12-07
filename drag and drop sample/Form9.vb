@@ -1,5 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
-
+Imports CrystalDecisions.CrystalReports.Engine
+Imports CrystalDecisions.Shared
 Public Class Form9
     Private Sub Form9_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadAppointments()
@@ -107,5 +108,14 @@ Public Class Form9
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
         Form5.Show()
+    End Sub
+
+    Private Sub btnprint_Click(sender As Object, e As EventArgs) Handles btnprint.Click
+        Form15.Show() 'Load form3
+        Dim report As New ReportDocument
+        'load cyrsttal report
+        report.Load("D:\Project-OOP\drag and drop sample\Appointments.rpt")
+        Form15.CrystalReportViewer1.ReportSource = report
+        Form15.CrystalReportViewer1.Refresh()
     End Sub
 End Class

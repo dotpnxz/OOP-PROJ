@@ -1,5 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
-
+Imports CrystalDecisions.CrystalReports.Engine
+Imports CrystalDecisions.Shared
 Public Class Form11
     Private loggedInUserId As Integer
     Private conn As MySqlConnection
@@ -212,5 +213,14 @@ Public Class Form11
         Else
             MessageBox.Show("Please select an appointment to delete.")
         End If
+    End Sub
+
+    Private Sub btnprint_Click(sender As Object, e As EventArgs) Handles btnprint.Click
+        Form15.Show() 'Load form3
+        Dim report As New ReportDocument
+        'load cyrsttal report
+        report.Load("D:\Project-OOP\drag and drop sample\Appointments.rpt")
+        Form15.CrystalReportViewer1.ReportSource = report
+        Form15.CrystalReportViewer1.Refresh()
     End Sub
 End Class
