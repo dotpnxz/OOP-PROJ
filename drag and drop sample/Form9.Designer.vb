@@ -22,6 +22,7 @@ Partial Class Form9
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form9))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnRefresh = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
@@ -44,23 +45,25 @@ Partial Class Form9
         '
         'btnRefresh
         '
+        Me.btnRefresh.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnRefresh.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRefresh.Location = New System.Drawing.Point(716, 128)
         Me.btnRefresh.Name = "btnRefresh"
         Me.btnRefresh.Size = New System.Drawing.Size(96, 37)
         Me.btnRefresh.TabIndex = 11
         Me.btnRefresh.Text = "Refresh"
-        Me.btnRefresh.UseVisualStyleBackColor = True
+        Me.btnRefresh.UseVisualStyleBackColor = False
         '
         'btnDelete
         '
+        Me.btnDelete.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDelete.Location = New System.Drawing.Point(716, 171)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(96, 37)
         Me.btnDelete.TabIndex = 10
         Me.btnDelete.Text = "Delete"
-        Me.btnDelete.UseVisualStyleBackColor = True
+        Me.btnDelete.UseVisualStyleBackColor = False
         '
         'dgvUsers
         '
@@ -74,6 +77,7 @@ Partial Class Form9
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.White
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(18, 18)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
@@ -81,21 +85,25 @@ Partial Class Form9
         Me.Button1.Size = New System.Drawing.Size(112, 35)
         Me.Button1.TabIndex = 13
         Me.Button1.Text = "Back"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'btnprint
         '
+        Me.btnprint.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnprint.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnprint.Location = New System.Drawing.Point(716, 214)
         Me.btnprint.Name = "btnprint"
         Me.btnprint.Size = New System.Drawing.Size(96, 30)
         Me.btnprint.TabIndex = 24
         Me.btnprint.Text = "Print"
-        Me.btnprint.UseVisualStyleBackColor = True
+        Me.btnprint.UseVisualStyleBackColor = False
         '
         'Form9
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(828, 692)
         Me.Controls.Add(Me.btnprint)
         Me.Controls.Add(Me.Button1)

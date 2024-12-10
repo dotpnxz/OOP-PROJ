@@ -130,7 +130,7 @@ Public Class Form11
             conn.Open()
 
             ' Query to fetch appointments where the counselor's ID matches the logged-in user ID
-            Dim query As String = "SELECT appointment_id, user_id, appointment_date, description, status, counselor_id " &
+            Dim query As String = "SELECT appointment_id, user_id, full_name, appointment_date, description, status, counselor_id " &
                       "FROM appointments " &
                       "WHERE counselor_id = @counselor_id " &
                       "AND status NOT IN ('Completed', 'Cancelled')"
@@ -216,10 +216,11 @@ Public Class Form11
     End Sub
 
     Private Sub btnprint_Click(sender As Object, e As EventArgs) Handles btnprint.Click
-        Form15.Show() 'Load form3
+        Form16.Show() 'Load form16
         Dim report As New ReportDocument
         'load cyrsttal report
-        report.Load("D:\Project-OOP\drag and drop sample\Appointments.rpt")
+        report.Load("D:\Project-OOP\drag and drop sample\Appointments2.rpt")
+
         Form15.CrystalReportViewer1.ReportSource = report
         Form15.CrystalReportViewer1.Refresh()
     End Sub

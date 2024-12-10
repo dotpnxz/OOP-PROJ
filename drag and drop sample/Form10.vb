@@ -85,7 +85,7 @@ Public Class Form10
             conn.Open()
 
             ' Fetch all appointments
-            Dim cmd As New MySqlCommand("SELECT appointment_id, user_id, appointment_date, description, status, assigned_counselor,counselor_id FROM appointments", conn)
+            Dim cmd As New MySqlCommand("SELECT appointment_id, user_id, full_name, appointment_date, description, status, assigned_counselor,counselor_id FROM appointments", conn)
             Dim adapter As New MySqlDataAdapter(cmd)
             Dim table As New DataTable()
 

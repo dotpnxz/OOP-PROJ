@@ -45,6 +45,7 @@ Partial Class Form15
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.CrystalReportViewer1)
         Me.Name = "Form15"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Crystal Report"
         Me.ResumeLayout(False)
 

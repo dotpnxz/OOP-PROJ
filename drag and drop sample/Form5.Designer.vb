@@ -22,6 +22,7 @@ Partial Class Form5
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form5))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -37,105 +38,128 @@ Partial Class Form5
         '
         'DataGridView1
         '
+        Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(144, 36)
+        Me.DataGridView1.Location = New System.Drawing.Point(216, 90)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 62
-        Me.DataGridView1.Size = New System.Drawing.Size(759, 369)
+        Me.DataGridView1.Size = New System.Drawing.Size(1138, 533)
         Me.DataGridView1.TabIndex = 1
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.Color.White
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(12, 40)
+        Me.Button2.Location = New System.Drawing.Point(13, 171)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(130, 23)
+        Me.Button2.Size = New System.Drawing.Size(195, 35)
         Me.Button2.TabIndex = 4
         Me.Button2.Text = "Create Account"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Button3
         '
+        Me.Button3.BackColor = System.Drawing.Color.White
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(12, 69)
+        Me.Button3.Location = New System.Drawing.Point(13, 95)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(130, 41)
+        Me.Button3.Size = New System.Drawing.Size(195, 63)
         Me.Button3.TabIndex = 5
         Me.Button3.Text = "Show All Appointments"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'Button4
         '
+        Me.Button4.BackColor = System.Drawing.Color.White
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(12, 116)
+        Me.Button4.Location = New System.Drawing.Point(13, 216)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(130, 40)
+        Me.Button4.Size = New System.Drawing.Size(195, 62)
         Me.Button4.TabIndex = 6
         Me.Button4.Text = "View Users"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button4.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(304, 104)
+        Me.Label1.Location = New System.Drawing.Point(456, 160)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(0, 24)
+        Me.Label1.Size = New System.Drawing.Size(0, 33)
         Me.Label1.TabIndex = 7
         '
         'lblMonth
         '
         Me.lblMonth.AutoSize = True
         Me.lblMonth.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMonth.Location = New System.Drawing.Point(541, 8)
+        Me.lblMonth.Location = New System.Drawing.Point(812, 48)
+        Me.lblMonth.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblMonth.Name = "lblMonth"
-        Me.lblMonth.Size = New System.Drawing.Size(77, 25)
+        Me.lblMonth.Size = New System.Drawing.Size(111, 37)
         Me.lblMonth.TabIndex = 9
         Me.lblMonth.Text = "Month"
         '
         'btnNextMonth
         '
-        Me.btnNextMonth.Location = New System.Drawing.Point(248, 7)
+        Me.btnNextMonth.BackColor = System.Drawing.Color.White
+        Me.btnNextMonth.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNextMonth.Location = New System.Drawing.Point(372, 47)
+        Me.btnNextMonth.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnNextMonth.Name = "btnNextMonth"
-        Me.btnNextMonth.Size = New System.Drawing.Size(98, 23)
+        Me.btnNextMonth.Size = New System.Drawing.Size(147, 35)
         Me.btnNextMonth.TabIndex = 11
         Me.btnNextMonth.Text = "Next Month"
-        Me.btnNextMonth.UseVisualStyleBackColor = True
+        Me.btnNextMonth.UseVisualStyleBackColor = False
         '
         'btnPreviousMonth
         '
-        Me.btnPreviousMonth.Location = New System.Drawing.Point(144, 7)
+        Me.btnPreviousMonth.BackColor = System.Drawing.Color.White
+        Me.btnPreviousMonth.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPreviousMonth.Location = New System.Drawing.Point(216, 47)
+        Me.btnPreviousMonth.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnPreviousMonth.Name = "btnPreviousMonth"
-        Me.btnPreviousMonth.Size = New System.Drawing.Size(98, 23)
+        Me.btnPreviousMonth.Size = New System.Drawing.Size(147, 35)
         Me.btnPreviousMonth.TabIndex = 10
         Me.btnPreviousMonth.Text = "Previous Month"
-        Me.btnPreviousMonth.UseVisualStyleBackColor = True
+        Me.btnPreviousMonth.UseVisualStyleBackColor = False
         '
         'btnSignOut
         '
-        Me.btnSignOut.Location = New System.Drawing.Point(805, 7)
+        Me.btnSignOut.BackColor = System.Drawing.Color.White
+        Me.btnSignOut.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSignOut.Location = New System.Drawing.Point(1208, 11)
+        Me.btnSignOut.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnSignOut.Name = "btnSignOut"
-        Me.btnSignOut.Size = New System.Drawing.Size(98, 23)
+        Me.btnSignOut.Size = New System.Drawing.Size(147, 35)
         Me.btnSignOut.TabIndex = 12
         Me.btnSignOut.Text = "Sign Out"
-        Me.btnSignOut.UseVisualStyleBackColor = True
+        Me.btnSignOut.UseVisualStyleBackColor = False
         '
         'btnHistory
         '
+        Me.btnHistory.BackColor = System.Drawing.Color.White
         Me.btnHistory.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnHistory.Location = New System.Drawing.Point(12, 162)
+        Me.btnHistory.Location = New System.Drawing.Point(13, 287)
+        Me.btnHistory.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnHistory.Name = "btnHistory"
-        Me.btnHistory.Size = New System.Drawing.Size(130, 42)
+        Me.btnHistory.Size = New System.Drawing.Size(195, 65)
         Me.btnHistory.TabIndex = 23
         Me.btnHistory.Text = "History"
-        Me.btnHistory.UseVisualStyleBackColor = True
+        Me.btnHistory.UseVisualStyleBackColor = False
         '
         'Form5
         '
         Me.AccessibleName = ""
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(912, 426)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(1368, 655)
         Me.Controls.Add(Me.btnHistory)
         Me.Controls.Add(Me.btnSignOut)
         Me.Controls.Add(Me.btnNextMonth)
@@ -146,6 +170,7 @@ Partial Class Form5
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.DataGridView1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Form5"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = " Admin Tab"

@@ -18,7 +18,7 @@ Public Class Form12
             conn.Open()
 
             ' Query to retrieve completed or cancelled appointments filtered by counselor_id
-            Dim query As String = "SELECT appointment_id, user_id, appointment_date, description, status, counselor_id " &
+            Dim query As String = "SELECT appointment_id, user_id, full_name, appointment_date, description, status, counselor_id " &
                               "FROM appointments " &
                               "WHERE status IN ('Completed', 'Cancelled') AND counselor_id = @counselor_id"
 

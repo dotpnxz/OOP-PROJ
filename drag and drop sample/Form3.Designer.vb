@@ -22,6 +22,7 @@ Partial Class Form3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form3))
         Me.dgvUsers = New System.Windows.Forms.DataGridView()
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
@@ -33,22 +34,21 @@ Partial Class Form3
         '
         'dgvUsers
         '
+        Me.dgvUsers.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvUsers.Location = New System.Drawing.Point(-10, 47)
-        Me.dgvUsers.Margin = New System.Windows.Forms.Padding(2)
+        Me.dgvUsers.Location = New System.Drawing.Point(-15, 72)
         Me.dgvUsers.Name = "dgvUsers"
         Me.dgvUsers.RowHeadersWidth = 62
         Me.dgvUsers.RowTemplate.Height = 28
-        Me.dgvUsers.Size = New System.Drawing.Size(473, 339)
+        Me.dgvUsers.Size = New System.Drawing.Size(710, 522)
         Me.dgvUsers.TabIndex = 1
         '
         'btnEdit
         '
         Me.btnEdit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEdit.Location = New System.Drawing.Point(467, 47)
-        Me.btnEdit.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnEdit.Location = New System.Drawing.Point(701, 73)
         Me.btnEdit.Name = "btnEdit"
-        Me.btnEdit.Size = New System.Drawing.Size(64, 32)
+        Me.btnEdit.Size = New System.Drawing.Size(96, 30)
         Me.btnEdit.TabIndex = 2
         Me.btnEdit.Text = "Save"
         Me.btnEdit.UseVisualStyleBackColor = True
@@ -56,10 +56,9 @@ Partial Class Form3
         'btnDelete
         '
         Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDelete.Location = New System.Drawing.Point(467, 83)
-        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnDelete.Location = New System.Drawing.Point(701, 110)
         Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(64, 24)
+        Me.btnDelete.Size = New System.Drawing.Size(96, 37)
         Me.btnDelete.TabIndex = 3
         Me.btnDelete.Text = "Delete"
         Me.btnDelete.UseVisualStyleBackColor = True
@@ -67,10 +66,9 @@ Partial Class Form3
         'btnRefresh
         '
         Me.btnRefresh.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRefresh.Location = New System.Drawing.Point(467, 111)
-        Me.btnRefresh.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnRefresh.Location = New System.Drawing.Point(701, 153)
         Me.btnRefresh.Name = "btnRefresh"
-        Me.btnRefresh.Size = New System.Drawing.Size(64, 24)
+        Me.btnRefresh.Size = New System.Drawing.Size(96, 37)
         Me.btnRefresh.TabIndex = 8
         Me.btnRefresh.Text = "Refresh"
         Me.btnRefresh.UseVisualStyleBackColor = True
@@ -80,36 +78,39 @@ Partial Class Form3
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(198, 15)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(297, 23)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(124, 24)
+        Me.Label1.Size = New System.Drawing.Size(182, 32)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Account List"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 12)
+        Me.Button1.BackColor = System.Drawing.Color.White
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(18, 18)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(112, 35)
         Me.Button1.TabIndex = 10
         Me.Button1.Text = "Back"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Form3
         '
         Me.AccessibleDescription = ""
         Me.AccessibleName = ""
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(548, 395)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(822, 608)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnRefresh)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnEdit)
         Me.Controls.Add(Me.dgvUsers)
-        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form3"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ManageUsersForm"
