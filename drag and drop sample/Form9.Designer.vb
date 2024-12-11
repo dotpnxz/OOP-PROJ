@@ -67,6 +67,7 @@ Partial Class Form9
         '
         'dgvUsers
         '
+        Me.dgvUsers.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvUsers.Location = New System.Drawing.Point(0, 128)
         Me.dgvUsers.Name = "dgvUsers"

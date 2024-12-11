@@ -215,13 +215,5 @@ Public Class Form11
         End If
     End Sub
 
-    Private Sub btnprint_Click(sender As Object, e As EventArgs) Handles btnprint.Click
-        Form16.Show() 'Load form16
-        Dim report As New ReportDocument
-        'load cyrsttal report
-        report.Load("D:\Project-OOP\drag and drop sample\Appointments2.rpt")
 
-        Form15.CrystalReportViewer1.ReportSource = report
-        Form15.CrystalReportViewer1.Refresh()
-    End Sub
 End Class

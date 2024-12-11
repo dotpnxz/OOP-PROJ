@@ -14,7 +14,7 @@ Public Class Form8
     Private Sub LoadAppointments()
         Try
             conn.Open()
-            Dim cmd As New MySqlCommand("SELECT appointment_id, user_id, full_name, appointment_date, description, status FROM appointments WHERE user_id = @user_id", conn)
+            Dim cmd As New MySqlCommand("SELECT appointment_id, user_id,full_name,appointment_date, description, status FROM appointments WHERE user_id = @user_id", conn)
             cmd.Parameters.AddWithValue("@user_id", loggedInUserId) ' Pass the user_id of the logged-in user
 
             Dim adapter As New MySqlDataAdapter(cmd)

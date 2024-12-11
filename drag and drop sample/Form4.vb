@@ -166,9 +166,10 @@ Public Class Form4
 
                     ' Get the logged-in user's ID
                     Dim userId As Integer = GetLoggedInUserId()
+                    Dim fullName As String = GetUserFullName(userId)
 
                     ' Save the appointment to the database
-                    SaveAppointmentToDatabase(appointmentDateTime, appointmentDetails, userId)
+                    SaveAppointmentToDatabase(appointmentDateTime, appointmentDetails, userId, fullName)
 
                     ' Show a confirmation message to the user
                     MessageBox.Show($"Appointment scheduled for: {appointmentDateTime}")
@@ -186,6 +187,35 @@ Public Class Form4
             MessageBox.Show("Please select a valid date.")
         End If
     End Sub
+
+    Private Function GetUserFullName(userId As Integer) As String
+        ' Correct connection string for MySQL
+        Dim connectionString As String = "Server=127.0.0.1;Port=3306;Database=accounts;Uid=root;Pwd=admin;"
+        Dim fullName As String = String.Empty
+
+        ' Use MySqlConnection for MySQL
+        Using connection As New MySqlConnection(connectionString)
+            connection.Open()
+
+            ' SQL query to get the full_name from the users table
+            Dim command As New MySqlCommand("SELECT full_name FROM appointments WHERE user_id = @userId", connection)
+
+            ' Adding parameter to avoid SQL injection
+            command.Parameters.AddWithValue("@userId", userId)
+
+            ' Execute the query and read the result
+            Using reader As MySqlDataReader = command.ExecuteReader()
+                If reader.Read() Then
+                    ' Retrieve the full_name value
+                    fullName = reader("full_name").ToString()
+                End If
+            End Using
+        End Using
+
+        ' Return the retrieved full name or empty string if not found
+        Return fullName
+    End Function
+
 
     Private Sub MarkCellAsBooked(selectedDate As DateTime, originalDay As Integer)
         ' Track appointments for each day using a dictionary (you can add this at the class level)
@@ -287,19 +317,20 @@ Public Class Form4
 
 
 
-    Private Sub SaveAppointmentToDatabase(appointmentDateTime As DateTime, description As String, userId As Integer)
+    Private Sub SaveAppointmentToDatabase(appointmentDateTime As DateTime, description As String, userId As Integer, fullName As String)
         ' Correct connection string for MySQL
         Dim connectionString As String = "Server=127.0.0.1;Port=3306;Database=accounts;Uid=root;Pwd=admin;"
 
-        ' Use MySqlConnection instead of SqlConnection for MySQL
+        ' Use MySqlConnection for MySQL
         Using connection As New MySqlConnection(connectionString)
             connection.Open()
 
-            ' Use MySqlCommand instead of SqlCommand for MySQL
-            Dim command As New MySqlCommand("INSERT INTO appointments (user_id, appointment_date, description, status) VALUES (@userId, @date, @description, @status)", connection)
+            ' Define the SQL query to insert the appointment
+            Dim command As New MySqlCommand("INSERT INTO appointments (user_id, full_name, appointment_date, description, status) VALUES (@userId, @fullName, @date, @description, @status)", connection)
 
             ' Adding parameters to avoid SQL injection
             command.Parameters.AddWithValue("@userId", userId)
+            command.Parameters.AddWithValue("@fullName", fullName)
             command.Parameters.AddWithValue("@date", appointmentDateTime) ' Pass the full DateTime here
             command.Parameters.AddWithValue("@description", description)
             command.Parameters.AddWithValue("@status", "Booked")  ' Default status can be "Booked"
@@ -308,6 +339,7 @@ Public Class Form4
             command.ExecuteNonQuery()
         End Using
     End Sub
+
 
     Private Function GetLoggedInUserId() As Integer
         ' Return the user ID of the currently logged-in user
